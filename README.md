@@ -3,6 +3,7 @@
 ## Due 4-11-2016
 
 ## Author
+Tim Keranen
 
 ## Description
 
@@ -61,7 +62,13 @@ Solution Requirements:
 
 
 ## Outside Resources Used
+None.
 
 ## Known Problems, Issues, And/Or Errors in the Program
+Throws this error which I don't know how to fix: 	Error	1	Inconsistent accessibility: property type 'System.Data.Entity.DbSet<assignment1.Beverage>' 
+													is less accessible than property 'assignment1.beveragetkeranenEntities.Beverages'	
+													G:\CIS237\cis237assignment5\assignment1\Model1.Context.cs	28	32	assignment1
+													
+It could be the entity framework just isn't compatible with my computer or my current version of VS, since cis237inclass5 also throws weird errors (both my version and Dave's).
 
 
