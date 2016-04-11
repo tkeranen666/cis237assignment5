@@ -73,8 +73,14 @@ namespace assignment1
             Console.WriteLine("What is the new items Pack?");
             Console.Write("> ");
             string pack = Console.ReadLine();
+            Console.WriteLine("What is the new items Price?");
+            Console.Write("> ");
+            string price = Console.ReadLine();
+            Console.WriteLine("What is the new items Active?");
+            Console.Write("> ");
+            string active = Console.ReadLine();
 
-            return new string[] { id, description, pack };
+            return new string[] { id, description, pack, price, active };
         }
 
         //Display Import Success

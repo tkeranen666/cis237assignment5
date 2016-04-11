@@ -81,7 +81,7 @@ namespace assignment1
                     case 2:
                        // Search For An Item
                         string searchQuery = userInterface.GetSearchQuery();
-                        string itemInformation = wineItemCollection.FindById(searchQuery);
+                        string itemInformation = beverageItem.Search(searchQuery);
                         if (itemInformation != null)
                         {
                             userInterface.DisplayItemFound(itemInformation);
@@ -95,15 +95,17 @@ namespace assignment1
                     case 3:
                        // Add A New Item To The List
                         string[] newItemInformation = userInterface.GetNewItemInformation();
-                        if (wineItemCollection.FindById(newItemInformation[0]) == null)
-                        {
-                            wineItemCollection.AddNewItem(newItemInformation[0], newItemInformation[1], newItemInformation[2]);
-                            userInterface.DisplayAddWineItemSuccess();
-                        }
-                        else
-                        {
-                            userInterface.DisplayItemAlreadyExistsError();
-                        }
+                        beverageItem.AddBeverage(newItemInformation[0], newItemInformation[1], newItemInformation[2], 
+                                                 newItemInformation[3], newItemInformation[4]);
+                        //if (wineItemCollection.FindById(newItemInformation[0]) == null)
+                        //{
+                        //    wineItemCollection.AddNewItem(newItemInformation[0], newItemInformation[1], newItemInformation[2]);
+                        //    userInterface.DisplayAddWineItemSuccess();
+                        //}
+                        //else
+                        //{
+                        //    userInterface.DisplayItemAlreadyExistsError();
+                        //}
                         break;
                 }
 
